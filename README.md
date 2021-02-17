@@ -12,7 +12,7 @@
 
 ## :hammer_and_wrench: Установка
 * установите [NodeJS](https://nodejs.org/en/) (если требуется) и [Yarn](https://yarnpkg.com/en/docs/install)
-* скачайте сборку в консоли с помощью [Git](https://git-scm.com/downloads): ```git clone https://github.com/andreyalexeich/gulp-pug-starter.git```
+* скачайте сборку в консоли с помощью [Git](https://git-scm.com/downloads): ```git clone https://github.com/Shiyan7/weback-pug-starter-scss.git```
 * установите ```gulp``` глобально: ```yarn global add gulp-cli```
 * установите ```bem-tools-core``` глобально: ```yarn global add bem-tools-core```
 * перейдите в скачанную папку со сборкой: ```cd gulp-pug-starter```
