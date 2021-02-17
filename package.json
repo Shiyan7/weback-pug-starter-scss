@@ -72,7 +72,11 @@
         "yargs": "~15.4.1"
     },
     "dependencies": {
-        "smart-grid": "^2.1.2"
+        "bootstrap": "^4.6.0",
+        "imask": "^6.0.7",
+        "smart-grid": "^2.1.2",
+        "swiper": "^6.4.12",
+        "vanilla-lazyload": "^17.3.1"
     },
     "husky": {
         "hooks": {
