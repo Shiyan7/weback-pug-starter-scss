@@ -1,5 +1,5 @@
-@media (max-width: $md) {
+@media (max-width: 1024px) {
     .header {
-        flex-direction: column;
+        background-color: var(--color-black);
     }
 }
