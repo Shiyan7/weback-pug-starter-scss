@@ -1,1 +1,1 @@
-console.log("This is section hero");
+/* import swiper from "swiper/bundle"; */

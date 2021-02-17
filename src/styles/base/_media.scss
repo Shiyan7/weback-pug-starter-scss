@@ -1,4 +1,4 @@
-@media ($md) {
+@media (max-width: $md) {
     .header {
         flex-direction: column;
     }
