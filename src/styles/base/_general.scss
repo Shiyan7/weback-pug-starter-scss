@@ -1,12 +1,89 @@
-h1, h2, h3, h4, h5, h6, ul {
+* {
     margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:after *:before {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-white);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: var(--font-size);
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button::-moz-focus-inner {
+    border: 0;
     padding: 0;
 }
 
+a, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+.site-container {
+    overflow: hidden;
+}
+
+.list-reset {
+    list-style: none;
+    padding: 0;
+}
+
+.btn-reset {
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+}
+.lock {
+    overflow: hidden;
+}
 .container {
-    @include container();
-    @include sm(max-width, rem(510));
-    @include md(max-width, rem(690));
-    @include lg(max-width, rem(930));
-    @include xl(max-width, rem(1110));
+    max-width: var(--container-size);
+    margin: 0 auto;
+    padding: 0 var(--container-futter);
+}
+.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
 }
