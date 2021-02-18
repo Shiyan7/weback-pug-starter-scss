@@ -1,10 +1,10 @@
 {
     "name": "gulp-pug-starter",
     "description": "Frontend development with pleasure",
-    "author": "Andrey Gorokhov",
+    "author": "Jeka Shiyan",
     "repository": {
         "type": "git",
-        "url": "https://github.com/andreyalexeich/gulp-pug-starter.git"
+        "url": "https://github.com/Shiyan7/weback-pug-starter-scss.git"
     },
     "license": "MIT",
     "scripts": {
