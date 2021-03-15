@@ -1,19 +1,17 @@
 .burger {
+    --width-burger: 30px;
+	--height-burger: 18px;
     --color-burger: var(--color-black);
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    width: 30px;
-    height: 18px;
-    &:hover {
-        .burger__line {
-            width: 80%;
-        }
-    }
+    width: var(--width-burger);
+    height: var(--height-burger);
+    /* z-index: 101; */
     &__line {
         position: absolute;
-        top: 8px;
+        top: calc(var(--height-burger) / 2);
         right: 0;
         width: 100%;
         height: 1px;
@@ -22,43 +20,33 @@
         background-color: var(--color-burger);
         opacity: 1;
     }
-    &::before {
+    &:before, &:after {
         @include pseudo();
         position: absolute;
+        right: 0;
+        width: 100%;
+        height: 1px;
+        transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+        transition-duration: 500ms;
+        background-color: var(--color-burger);
+    }
+    &::before {
         top: 0;
-        right: 0;
-        width: 100%;
-        height: 1px;
-        transition: .3s cubic-bezier(.8, .5, .2, 1.4);
-        transition-duration: 500ms;
-        background-color: var(--color-burger);
     }
     &::after {
-        @include pseudo();
-        position: absolute;
-        right: 0;
         bottom: 0;
-        width: 100%;
-        height: 1px;
-        transition: .3s cubic-bezier(.8, .5, .2, 1.4);
-        transition-duration: 500ms;
-        background-color: var(--color-burger);
     }
-}
-.burger-close {
-    --color-burger: var(--color-black);
-    z-index: 101;
-    .burger__line {
-        opacity: 0;
-    }
-    &::after {
-        top: 13px;
-        width: 100%;
-        transform: rotate(45deg);
-    }
-    &::before {
-        top: 13px;
-        width: 100%;
-        transform: rotate(-45deg);
+    &-close {
+        .burger__line {
+            opacity: 0;
+        }
+        &::after {
+            top: calc(var(--height-burger) / 2);
+            transform: rotate(45deg);
+        }
+        &::before {
+            top: calc(var(--height-burger) / 2);
+            transform: rotate(-45deg);
+        }
     }
 }
