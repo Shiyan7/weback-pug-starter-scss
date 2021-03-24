@@ -5,3 +5,7 @@ mixin icon(name,mod)
   else
     svg(class="svg-icon" + name)
       use(xlink:href="./img/sprites/sprite.svg#" + name)
+
+mixin burger(aria)
+  button.btn-reset.burger(aria-label=aria)
+    span.burger__line
