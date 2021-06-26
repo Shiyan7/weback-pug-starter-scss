@@ -72,7 +72,7 @@
         "yargs": "~15.4.1"
     },
     "dependencies": {
-        "bootstrap": "^4.6.0",
+        "bootstrap": "^5.0.2",
         "imask": "^6.0.7",
         "smart-grid": "^2.1.2",
         "swiper": "^6.4.12",
