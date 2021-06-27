@@ -29,10 +29,10 @@ a, a:visited {
     text-decoration: none;
 }
 
-
 a:hover {
     text-decoration: none;
 }
+
 img {
     max-width: 100%;
 }
@@ -54,6 +54,9 @@ img {
     outline: none;
     cursor: pointer;
     background: transparent;
+    &:focus-visible {
+        outline: 2px solid var(--color-black);
+    }
 }
 .lock {
     overflow: hidden;
@@ -65,6 +68,7 @@ img {
     opacity: 1;
     visibility: visible;
 }
+
 .visually-hidden {
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
