@@ -64,6 +64,8 @@ export class GraphModal {
     }
 }
 
+/* Setup */
+
 new GraphModal({
     isOpen: () => {
         console.log("opened");

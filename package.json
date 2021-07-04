@@ -74,7 +74,9 @@
     "dependencies": {
         "bootstrap": "^5.0.2",
         "imask": "^6.0.7",
+        "picturefill": "^3.0.3",
         "smart-grid": "^2.1.2",
+        "svg4everybody": "^2.1.9",
         "swiper": "^6.4.12",
         "vanilla-lazyload": "^17.3.1"
     },

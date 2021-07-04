@@ -6,7 +6,7 @@
     @font-face {
         font-family: '#{$font-family}';
         src: url('../fonts/#{$url}.woff2') format('woff2'),
-        url('../#{$url}.woff') format('woff');
+        url('../fonts/#{$url}.woff') format('woff');
         font-weight: #{$weight};
         font-display: swap;
         font-style: normal;

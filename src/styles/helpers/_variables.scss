@@ -1,8 +1,15 @@
+/* CSS Variables */
+
 :root {
     --color-white: #fff;
     --color-black: #000;
-    --color-accent: #DE0D0D;
-    --font-size: 18px;
-    --container-size: 1140px;
-    --container-gutter: 15px
+    --color-accent: #FE8029;
+    --font-size: 16px;
+    --container-gutter: 15px;
+    --container-size: calc(1140px - (var(--container-gutter) * 2));
 }
+
+/* SCSS Variables */
+
+$screen-width: 1920;
+$screen-height: 970;
