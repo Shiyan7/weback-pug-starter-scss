@@ -9,3 +9,10 @@ mixin icon(name,mod)
 mixin burger(aria)
   button.btn-reset.burger(aria-label=aria)
     span.burger__line
+
+mixin nav(arr)
+  nav.nav
+    ul.nav__list.list-reset
+      each item in arr
+        li.nav__item
+          a.nav__link(href=item.link)= item.value

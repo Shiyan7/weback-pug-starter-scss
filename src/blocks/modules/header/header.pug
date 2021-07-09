@@ -1,4 +1,7 @@
+include ../../../views/helpers/arrays
+
 header.header 
     .container.header__container
         +burger
-        button.btn-reset.modal-btn(data-graph-animation="custom" data-graph-path="first" data-graph-speed="500") Открыть окно
+        //button.btn-reset.modal-btn(data-graph-animation="custom" data-graph-path="first" data-graph-speed="500") Открыть окно
+        +nav(navArr)
